@@ -11,8 +11,8 @@ module.exports = class extends Generator {
     initializing() {
         this.log('*** APP ***');
 
-        this.composeWith(require.resolve('../sub-gen1'));
-        this.composeWith(require.resolve('../sub-gen2'));
+        this.composeWith(require.resolve('../sub-gen1'), { parentOptions: this.options });
+        this.composeWith(require.resolve('../sub-gen2'), { parentOptions: this.options });
 
         this.log(`str1 => ${this.options['str1']}`);
         this.log(`str2 => ${this.options['str2']}`);

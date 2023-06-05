@@ -23,7 +23,7 @@
     "moment": "^2.29.4",
     "pack": "^2.2.0",
     "shelljs": "^0.8.5",
-    "yeoman-generator": "^5.7.0",
+    "yeoman-generator": "^5.9.0",
     "yosay": "^2.0.2"
   },
   "devDependencies": {
